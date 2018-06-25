@@ -26,10 +26,10 @@ yarn install
 yarn build:mainnet
 ```
 
-#### 3.2 Devnet
+#### 3.2 Testnet
 
 ```bash
-yarn build:devnet
+yarn build:testnet
 ```
 
 #### 3.3 Custom
@@ -84,10 +84,10 @@ yarn dev --env.routerMode=history
 yarn dev # or yarn dev:mainnet
 ```
 
-#### Devnet
+#### Testnet 
 
 ```bash
-yarn dev:devnet
+yarn dev:testnet
 ```
 
 #### Custom

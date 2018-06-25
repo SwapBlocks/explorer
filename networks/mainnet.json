@@ -1,40 +1,18 @@
 {
-  "title": "ARK Explorer",
-  "server": "https://explorer.ark.io:8443/api",
+  "title": "SBX Explorer",
+  "server": "http://167.99.82.39:4001/api",
   "alias": "Main",
   "activeDelegates": 51,
   "rewardOffset": 75600,
   "currencies": {
-    "AUD": "A$",
-    "BRL": "R$",
     "BTC": "Ƀ",
-    "CAD": "C$",
-    "CHF": "CHF",
-    "CNY": "¥",
     "ETH": "Ξ",
     "EUR": "€",
-    "GBP": "£",
-    "INR": "₹",
-    "JPY": "¥",
-    "KRW": "₩",
     "LTC": "Ł",
-    "NZD": "N$",
-    "RUB": "₽",
     "USD": "$"
   },
   "knownWallets": {
-    "AFrPtEmzu6wdVpa2CnRDEKGQQMWgq8nE9V": "Binance",
-    "AJbmGnDAx9y91MQCDApyaqZhn6fBvYX9iJ": "Cryptopia",
-    "AYCTHSZionfGoQsRnv5gECEuFWcZXS38gs": "ARK Bounty",
-    "AZmQJ2P9xg5j6VPZWjcTzWDD4w7Qww2KGX": "ARK GitHub Bounty",
-    "ALgvTAoz5Vi9easHqBK6aEMKatHb4beCXm": "ARK Shield",
-    "AUDud8tvyVZa67p3QY7XPRUTjRGnWQQ9Xv": "ARK Team",
-    "AUexKjGtgsSpVzPLs6jNMM6vJ6znEVTQWK": "Bittrex",
-    "AeUyEH2UGpYrwHAupBh7syFhWYSBNFAkap": "OKEx",
-    "AN4YrhvXUCLwL4wtts1FuWupbitKkwo91G": "Upbit",
-    "AcVHEfEmFJkgoyuNczpgyxEA3MZ747DRAu": "Livecoin",
-    "AWkBFnqvCF4jhqPSdE2HBPJiwaf67tgfGR": "ARK Community Fund",
-    "AewxfHQobSc49a4radHp74JZCGP8LRe4xA": "Genesis Wallet"
+    "XULMJUhenSekhS2P5CEG5zSTE7MaV9vB1x": "Genesis Wallet"
   },
   "defaults": {
     "currency": {
@@ -43,6 +21,6 @@
     }
   },
   "config": {
-    "priceChart": true
+    "priceChart": false 
   }
 }
