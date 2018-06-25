@@ -83,7 +83,7 @@
     "mini-css-extract-plugin": "^0.4.0",
     "minimist": "^1.2.0",
     "moment-timezone": "^0.5.17",
-    "nightwatch": "^0.9.21",
+    "nightwatch": "^1.0.6",
     "node-notifier": "^5.2.1",
     "optimize-css-assets-webpack-plugin": "4.0.2",
     "ora": "^2.1.0",

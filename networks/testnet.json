@@ -1,0 +1,17 @@
+{
+  "title": "TSBX Explorer",
+  "server": "http://167.99.82.39:4111/api",
+  "alias": "Testing",
+  "activeDelegates": 51,
+  "rewardOffset": 10800,
+  "currencies": [], 
+  "knownWallets": {
+    "aDkrcELEKQ32p9Kjv4SQ55i9DXw9Hdgu3q": "Genesis"
+  },
+  "defaults": {
+    "currency": null
+  },
+  "config": {
+    "priceChart": false
+  }
+}

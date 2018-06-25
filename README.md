@@ -1,14 +1,8 @@
-<p align="center">
-    <img src="/ARKExplorer.png" />
-</p>
-
-[![Build Status](https://img.shields.io/travis/ArkEcosystem/explorer/master.svg?style=flat)](https://travis-ci.org/ArkEcosystem/explorer)
-
-# ARK Explorer 3.0
+# SWAPBlocks Explorer
 
 > Designed and developed from the ground-up, using lean & fast developmental frameworks (Tailwind CSS & Vue.JS).
 
-You can access it at [https://explorer.ark.io/](https://explorer.ark.io/).
+You can access it at [https://explorer.swapblocks.io/](https://explorer.swapblocks.io/).
 
 ## Build Setup
 
