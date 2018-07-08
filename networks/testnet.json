@@ -1,6 +1,6 @@
 {
   "title": "TSBX Explorer",
-  "server": "http://167.99.82.39:4111/api",
+  "server": "https:/tapi.swapblocks.io/api",
   "alias": "Testing",
   "activeDelegates": 51,
   "rewardOffset": 10800,
