@@ -60,7 +60,7 @@ EXPLORER_HOST="127.0.0.1" EXPLORER_PORT="4200" node express-server.js
 
 ## 4. History Mode
 
-If you wish to remove the `/#/` from your URLs you can follow those steps https://router.vuejs.org/en/essentials/history-mode.html.
+If you wish to remove the `/#/` from your URLs you can follow those steps https://router.vuejs.org/guide/essentials/history-mode.html.
 
 ### 4.1 Build
 
