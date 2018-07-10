@@ -1,6 +1,6 @@
 {
   "title": "TSBX Explorer",
-  "server": "https:/tapi.swapblocks.io/api",
+  "server": "https://tapi.swapblocks.io/api",
   "alias": "Testing",
   "activeDelegates": 51,
   "rewardOffset": 10800,
