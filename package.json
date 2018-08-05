@@ -6,10 +6,10 @@
   "private": true,
   "scripts": {
     "build": "node build/build.js",
-    "build:mainnet": "node build/build.js --network mainnet",
+    "build:alphanet": "node build/build.js --network alphanet",
     "build:testnet": "node build/build.js --network testnet",
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "dev:mainnet": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js --env.network=mainnet",
+    "dev:alphanet": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js --env.network=alphanet",
     "dev:testnet": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js --env.network=testnet",
     "unit": "jest --config test/unit/jest.conf.js --coverage || true",
     "e2e": "node test/e2e/runner.js",

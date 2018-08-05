@@ -1,9 +1,9 @@
 {
   "title": "SBX Explorer",
-  "server": "http://167.99.82.39:4001/api",
+  "server": "https://api.swapblocks.io/api",
   "alias": "Main",
   "activeDelegates": 51,
-  "rewardOffset": 75600,
+  "rewardOffset": 108000,
   "currencies": {
     "BTC": "Ƀ",
     "ETH": "Ξ",
@@ -12,7 +12,10 @@
     "USD": "$"
   },
   "knownWallets": {
-    "XULMJUhenSekhS2P5CEG5zSTE7MaV9vB1x": "Genesis Wallet"
+    "XULMJUhenSekhS2P5CEG5zSTE7MaV9vB1x": "Genesis Wallet",
+    "XUxkGhFkMg3uNYsLn9b7VT1P4Kbr6ftKHz": "Pre-sale Wallet",
+    "XFjRmVearQ1PinxBhYaC7Er1moESWQmv1K": "Bounty Wallet",
+    "XRXu9zSJ9ErQx6w1ZCQrnvtY9enGFhKPZ7": "Other Pre Mine to be Divided later"
   },
   "defaults": {
     "currency": {
