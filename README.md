@@ -8,11 +8,7 @@ You can access it at [https://explorer.swapblocks.io/](https://explorer.swapbloc
 ### 1. Clone the repository
 
 ```bash
-<<<<<<< HEAD
 git clone https://github.com/SwapBlocks/explorer
-=======
-git clone https://github.com/ArkEcosystem/explorer
->>>>>>> be6c9741ddaebfbe12155e68476fb6b9982b7c26
 ```
 
 ### 2. Install Dependencies
