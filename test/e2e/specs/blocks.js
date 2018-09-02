@@ -63,17 +63,15 @@ module.exports = {
 
   'it should be possible to click on the block id': function (browser) {
     browser
-      .useCss()
-      .waitForElementVisible('div.table-component')
-      .useXpath().click("//tbody[contains(@class, 'table-component__table__body')]//tr[1]//td[1]//a[1]")
+      .useXpath()
+      .waitForElementVisible("//tbody[contains(@class, 'table-component__table__body')]//tr[1]//td[1]//a[1]")
+      .click("//tbody[contains(@class, 'table-component__table__body')]//tr[1]//td[1]//a[1]")
       .pause(500)
     browser
       .useCss()
-      .waitForElementVisible('main.theme-light')
-      .assert.urlContains('/block/')
-    browser
       .waitForElementVisible('h1')
       .assert.containsText('h1', 'Block')
+      .assert.urlContains('/block/')
       .end()
   },
 
