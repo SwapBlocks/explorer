@@ -1,24 +1,8 @@
-<<<<<<< HEAD
 # SWAPBlocks Explorer
 
 > Designed and developed from the ground-up, using lean & fast developmental frameworks (Tailwind CSS & Vue.JS).
 
 You can access it at [https://explorer.swapblocks.io/](https://explorer.swapblocks.io/).
-=======
-# ARK Explorer 3.0
-
-<p align="center">
-    <img src="/ARKExplorer.png" />
-</p>
-
-> Designed and developed from the ground-up, using lean & fast developmental frameworks (Tailwind CSS & Vue.JS).
-
-[![Build Status](https://badgen.now.sh/travis/ArkEcosystem/explorer/master)](https://travis-ci.org/ArkEcosystem/explorer)
-[![License: MIT](https://badgen.now.sh/badge/license/MIT/green)](https://opensource.org/licenses/MIT)
-
-You can access it at [https://explorer.ark.io/](https://explorer.ark.io/).
->>>>>>> be6c9741ddaebfbe12155e68476fb6b9982b7c26
-
 ## Build Setup
 
 ### 1. Clone the repository
@@ -79,12 +63,6 @@ EXPLORER_HOST="127.0.0.1" EXPLORER_PORT="4200" node express-server.js
 
 > Keep in mind that this requires you to run your own server and a running instance of nginx.
 
-<<<<<<< HEAD
-If you wish to remove the `/#/` from your URLs you can follow those steps https://router.vuejs.org/guide/essentials/history-mode.html.
-=======
-### 4. Development
->>>>>>> be6c9741ddaebfbe12155e68476fb6b9982b7c26
-
 #### 4.1 Mainnet
 
 ```bash
@@ -103,17 +81,14 @@ yarn dev:devnet
 yarn dev --env.network=custom
 ```
 
-<<<<<<< HEAD
 #### Testnet 
 
 ```bash
 yarn dev:testnet
 ```
-=======
 ### 5. History Mode
 
 If you wish to remove the `/#/` from your URLs you can follow those steps https://router.vuejs.org/en/essentials/history-mode.html.
->>>>>>> be6c9741ddaebfbe12155e68476fb6b9982b7c26
 
 #### 5.1 Build
 
