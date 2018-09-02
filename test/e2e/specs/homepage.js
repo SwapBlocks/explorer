@@ -124,28 +124,75 @@ module.exports = {
     browser
       .url(devServer)
       .waitForElementVisible('main.theme-light')
+      .waitForElementVisible('button.border-transparent')
       .click('button.border-transparent')
-
     browser
-      .useXpath().click("//button[contains(., 'Top Wallets')]")
-      .pause(1000)
+      .useXpath()
+      .waitForElementVisible("//button[contains(., 'Top Wallets')]")
+      .click("//button[contains(., 'Top Wallets')]")
+      .pause(500)
+    browser
+      .waitForElementVisible("//h1[text() = 'Top Wallets']")
       .assert.urlContains('/top-wallets')
   },
 
   'from menu, it should be possible to navigate to delegate monitor': function(browser) {
     browser
       .useCss().click('button.border-transparent')
-      .useXpath().click("//button[contains(., 'Delegate Monitor')]")
-      .pause(1000)
+      .useXpath()
+      .waitForElementVisible("//button[contains(., 'Delegate Monitor')]")
+      .click("//button[contains(., 'Delegate Monitor')]")
+      .pause(500)
+    browser
+      .waitForElementVisible("//h1[text() = 'Delegate Monitor']")
       .assert.urlContains('/delegate-monitor')
   },
 
   'from menu, it should be possible to navigate back to homepage': function(browser) {
     browser
       .useCss().click('button.border-transparent')
-      .useXpath().click("//button[contains(., 'Home')]")
-      .pause(1000)
+      .useXpath()
+      .waitForElementVisible("//button[contains(., 'Home')]")
+      .click("//button[contains(., 'Home')]")
+      .pause(500)
+    browser
+      .waitForElementVisible("//h1[text() = 'Latest transactions and blocks']")
       .assert.urlContains('/#')
+  },
+
+  'it should be possible to switch to latest blocks': function (browser) {
+    const devServer = browser.globals.devServerURL
+
+    browser
+      .url(devServer)
+      .useXpath()
+      .click("//div[contains(@class, 'inactive-tab') and contains(text(), 'Latest Blocks')]")
+      .waitForElementVisible("//div[contains(@class, 'active-tab') and contains(text(), 'Latest Blocks')]")
+    browser.expect.element("//div[contains(@class, 'active-tab') and contains(text(), 'Latest Blocks')]").to.be.present
+    browser.expect.element("//div[contains(@class, 'inactive-tab') and contains(text(), 'Latest Transactions')]").to.be.present
+  },
+
+  'latest block table should refresh automatically': function (browser) {
+    const devServer = browser.globals.devServerURL
+
+    browser
+      .url(devServer)
+      .useXpath()
+      .click("//div[contains(@class, 'inactive-tab') and contains(text(), 'Latest Blocks')]")
+      .waitForElementVisible("//thead[contains(@class, 'table-component__table__head')]//tr[1]//th[4][contains(., 'Transactions')]")
+    browser
+      .getText("//tbody[contains(@class, 'table-component__table__body')]//tr[1]//td[2]", function(result) {
+        const blockId = result.value
+
+        browser
+          .expect.element("//tbody[contains(@class, 'table-component__table__body')]//tr[1]//td[2][contains(., '" + blockId + "')]").to.be.present
+        browser
+          .waitForElementNotPresent("//tbody[contains(@class, 'table-component__table__body')]//tr[1]//td[2][contains(., '" + blockId + "')]", 20000)
+        browser
+          .getText("//tbody[contains(@class, 'table-component__table__body')]//tr[1]//td[2]", function(result) {
+            browser.assert.notEqual(result.value, blockId)
+          })
+      })
   },
 
   // Search tests

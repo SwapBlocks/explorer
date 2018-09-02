@@ -2,6 +2,7 @@
   "Height": "Height",
   "Network": "Network",
   "Main": "Main",
+  "Development": "Development",
   "Supply": "Supply",
   "Market Cap": "Market Cap",
 
@@ -66,6 +67,7 @@
   "Missed block, Awaiting Slot": "Missed block, Awaiting Slot",
   "Not Forging": "Not Forging",
   "Awaiting Slot": "Awaiting Slot",
+  "Never": "Never",
 
   "Address": "Address",
   "Public Key": "Public Key",
@@ -85,6 +87,7 @@
   "All": "All",
   "Sent": "Sent",
   "Received": "Received",
+  "Second Signature Enabled": "Second Signature Enabled",
 
   "Previous": "Previous",
   "Next": "Next",
